@@ -18,5 +18,4 @@ LOCAL_PATH := $(call my-dir)
 
 ifeq ($(TARGET_DEVICE),u8950)
 include $(call all-makefiles-under,$(LOCAL_PATH))
-#sh device/huawei/msm7x27a-common/patches/apply.sh
 endif
