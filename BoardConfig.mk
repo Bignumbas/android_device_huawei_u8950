@@ -37,6 +37,7 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 BOARD_FM_DEVICE := bcm4330
 BOARD_GLOBAL_CFLAGS += -DHAVE_FM_RADIO
 BOARD_HAVE_FM_RADIO := true
+BOARD_HAVE_QCOM_FM := true
 
 # Kernel
 TARGET_KERNEL_CONFIG := u8950_defconfig
@@ -51,7 +52,6 @@ TARGET_RECOVERY_FSTAB := device/huawei/u8950/rootdir/fstab.huawei
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/huawei/u8950/ril/
-
 
 # Wi-Fi
 BOARD_WLAN_DEVICE := bcmdhd
