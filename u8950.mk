@@ -16,6 +16,9 @@
 # Inherit the msm7x27a-common definitions
 $(call inherit-product, device/huawei/msm7x27a-common/msm7x27a.mk)
 
+PRODUCT_DEFAULT_LANGUAGE := ru
+PRODUCT_DEFAULT_REGION := RU
+
 DEVICE_PACKAGE_OVERLAYS += device/huawei/u8950/overlay
 
 LOCAL_PATH := device/huawei/u8950
