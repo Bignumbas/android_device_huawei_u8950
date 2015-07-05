@@ -25,21 +25,21 @@ LOCAL_PATH := device/huawei/u8950
 
 # Files
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)rootdir/fstab.huawei:root/fstab.huawei \
-	$(LOCAL_PATH)rootdir/init.device.rc:root/init.device.rc \
-	$(LOCAL_PATH)rootdir/1191601.img:root/tp/1191601.img
+	$(LOCAL_PATH)/rootdir/fstab.huawei:root/fstab.huawei \
+	$(LOCAL_PATH)/rootdir/init.device.rc:root/init.device.rc \
+	$(LOCAL_PATH)/rootdir/1191601.img:root/tp/1191601.img
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)configs/AudioFilter.csv:system/etc/AudioFilter.csv \
-	$(LOCAL_PATH)configs/thermald.conf:system/etc/thermald.conf \
-	$(LOCAL_PATH)configs/nvram_4330.txt:system/etc/nvram_4330.txt
+	$(LOCAL_PATH)/configs/AudioFilter.csv:system/etc/AudioFilter.csv \
+	$(LOCAL_PATH)/configs/thermald.conf:system/etc/thermald.conf \
+	$(LOCAL_PATH)/configs/nvram_4330.txt:system/etc/nvram_4330.txt
 
 PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)keylayout/7k_handset.kl:system/usr/keylayout/7k_handset.kl \
-	$(LOCAL_PATH)keylayout/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
-	$(LOCAL_PATH)keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
-	$(LOCAL_PATH)keylayout/ft5x06_ts.kl:system/usr/keylayout/ft5x06_ts.kl \
-	$(LOCAL_PATH)keylayout/Generic.kl:system/usr/keylayout/Generic.kl
+	$(LOCAL_PATH)/keylayout/7k_handset.kl:system/usr/keylayout/7k_handset.kl \
+	$(LOCAL_PATH)/keylayout/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
+	$(LOCAL_PATH)/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+	$(LOCAL_PATH)/keylayout/ft5x06_ts.kl:system/usr/keylayout/ft5x06_ts.kl \
+	$(LOCAL_PATH)/keylayout/Generic.kl:system/usr/keylayout/Generic.kl
 
 # Permissions
 PRODUCT_COPY_FILES += \
