@@ -1,1 +1,2 @@
-add_lunch_combo cm_u8950-userdebug
+add_lunch_combo slim_u8950-userdebug
+add_lunch_combo slim_u8950-eng
