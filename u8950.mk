@@ -13,11 +13,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+
 # Inherit the msm7x27a-common definitions
 $(call inherit-product, device/huawei/msm7x27a-common/msm7x27a.mk)
-
-PRODUCT_DEFAULT_LANGUAGE := ru
-PRODUCT_DEFAULT_REGION := RU
 
 DEVICE_PACKAGE_OVERLAYS += device/huawei/u8950/overlay
 
@@ -56,7 +54,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     gsm.version.baseband=1040 \
-    rild.libpath=/system/lib/libril-qc-1.so
+    rild.libpath=/system/lib/libril-qc-1.so \
+    ro.telephony.ril.v3=qcomdsds,skippinpukcount,signalstrength \
+    ro.telephony.ril_class=HuaweiQualcommRIL
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.fm.analogpath.supported=false \
+    ro.fm.transmitter=false \
+    ro.fm.mulinst.recording.support=false
+
+PRODUCT_PACKAGES += \
+   FM2 \
+   FMRecord \
+   libqcomfm_jni \
+   qcom.fmradio
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full.mk)
 
