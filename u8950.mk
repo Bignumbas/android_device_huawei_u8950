@@ -30,7 +30,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/configs/AudioFilter.csv:system/etc/AudioFilter.csv \
 	$(LOCAL_PATH)/configs/thermald.conf:system/etc/thermald.conf \
-	$(LOCAL_PATH)/configs/nvram_4330.txt:system/etc/nvram_4330.txt
+	$(LOCAL_PATH)/configs/nvram_4330.txt:system/etc/nvram_4330.txt \
+	$(LOCAL_PATH)/configs/init.qcom.fm.sh:system/etc/init.qcom.fm.sh
 
 PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/keylayout/7k_handset.kl:system/usr/keylayout/7k_handset.kl \
