@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, vendor/slim/config/common.mk)
 
 # Specify phone tech before including full_phone
 $(call inherit-product, vendor/slim/config/gsm.mk)
