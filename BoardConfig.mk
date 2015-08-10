@@ -21,7 +21,6 @@
 -include device/huawei/msm7x27a-common/BoardConfigCommon.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := u8950
-TARGET_OTA_ASSERT_DEVICE := u8950,hwu8950,u8950-1,hwu8950-1
 
 # Architecture and CPU
 TARGET_CPU_SMP := true
