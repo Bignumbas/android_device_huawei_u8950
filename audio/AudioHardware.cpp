@@ -1906,6 +1906,11 @@ status_t AudioHardware::doRouting(AudioStreamInMSM72xx *input, int outputDevice)
        new_snd_device = SND_DEVICE_FM_DIGITAL_BT_A2DP_HEADSET;
 #endif
 
+    if (new_snd_device == SND_DEVICE_SPEAKER && SND_DEVICE_STEREO_SPEAKER >= 0) {
+      ALOGI("Routing audio to Stereo Speakerphone\n");
+      new_snd_device = SND_DEVICE_STEREO_SPEAKER;
+    }
+
 
     if (new_snd_device != -1 && new_snd_device != mCurSndDevice) {
         ret = doAudioRouteOrMute(new_snd_device);
