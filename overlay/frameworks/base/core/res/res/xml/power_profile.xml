@@ -49,7 +49,6 @@
       <value>1190400</value>
       <value>1228800</value>
       <value>1267200</value>
-      <value>1500000</value>
   </array>
   <item name="cpu.idle">1.0</item>
   <array name="cpu.active">
@@ -67,5 +66,4 @@
       <value>138</value>
       <value>142</value>
   </array>
-  <item name="battery.capacity">1990</item>
-</device>
+  <item name="
